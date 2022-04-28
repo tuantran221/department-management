@@ -5,17 +5,11 @@ import Routes from "./routes/Routes";
 const App = () => {
   return (
     <BrowserRouter>
-      <Route
-        render={(props) => (
-          <div>
-            <div className="container">
-              <div className="main">
-                <Routes />
-              </div>
-            </div>
-          </div>
-        )}
-      ></Route>
+      <div className="App">
+        <BrowserRouter>
+          <Routes />
+        </BrowserRouter>
+      </div>
     </BrowserRouter>
   );
 };
