@@ -1,25 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './sass/index.scss'
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import {SnackbarProvider} from "notistack"
+import React from "react";
+import ReactDOM from "react-dom";
+import "./sass/index.scss";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+
 
 ReactDOM.render(
   <React.StrictMode>
-   <SnackbarProvider maxSnack={2}
-   autoHideDuration={500}
-    anchorOrigin={{
-      vertical: 'top',
-      horizontal: 'right',  
-      
-  }}
-  className="rendererror"
- >
     <App />
-    </SnackbarProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
